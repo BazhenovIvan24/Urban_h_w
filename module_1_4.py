@@ -1,5 +1,13 @@
 my_string = input()
-print(len(my_string))
+def find_len(str):
+    count = 0
+    while str[count:]:
+        count += 1
+    return count
+len_my_string = find_len(my_string)
+
+print(len_my_string)
+#print(len(my_string))
 print(my_string.upper())
 print(my_string.lower())
 print(my_string.replace(' ', ''))
