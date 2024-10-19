@@ -18,4 +18,4 @@ name = input('Name: ')    #в команде ввода всегда строк�
 print(type(name))
 current_year = 2024
 birthday_year = input('Year: ')
-print('Mr. ', name,' Your age is ', current_year - float(birthday_year))
+print('mr. '.replace('m', 'M'), name,' Your age is '.upper(), current_year - float(birthday_year))
