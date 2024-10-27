@@ -16,20 +16,32 @@ while i < len(grades):
     i += 1 # increase_i for cycle "while"
 
 #Теперь расставим студентов по порядку, т.к. у каждого студента есть оценки, то и их количество будет равно количеству списков оценкок
+students_list = list(students)
+
+#Данные об алфавите хранятся в кодировке ASCII, будем использовать функцию ord
+# students_alphavite = []
+# s = ''
+# for character in range(ord('A'), ord('Z')+1):
+#     for i in range(len(students_list)):
+#         if students_list[i][0] == character:
+#             students_alphavite.append(students_list[i])
+#     s += chr(character)
+# print(students_alphavite)
+# print(students_list[0][0])
+# print(s)
+#почему-то не заработало так, так что просто применим функцию sorted)
+
+students_alphavite_sort = sorted (students_list)
+
+
+#Теперь есть 2 списка, в одном средние баллы, в другом есть имена по алфавиту.
+dict_marks = {}
+for i in range(len(students)):
+    dict_marks.update({students_alphavite_sort[i]: average_marks[i]})
+
+print(dict_marks)
 
 
 
 
-print(len(grades[0]))
 
-print(grades[0][0])
-
-print(average_marks)
-
-
-
-
-s=0
-
-
-students = {s}
