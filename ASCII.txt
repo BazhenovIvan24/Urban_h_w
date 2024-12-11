@@ -1,0 +1,11 @@
+#Данные об алфавите хранятся в кодировке ASCII, будем использовать функцию ord
+students_alphavite = []
+s = ''
+for character in range(ord('A'), ord('Z')+1):
+    for i in range(len(students_list)):
+        if students_list[i][0] == character:
+            students_alphavite.append(students_list[i])
+    s += chr(character)
+print(students_alphavite)
+print(students_list[0][0])
+print(s)

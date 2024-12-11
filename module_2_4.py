@@ -7,6 +7,7 @@ for n in numbers:
         if n % delitel == 0 and n!= delitel:
             is_prime = False
             break
+        
 
     if is_prime == False:
         not_primes.append(n)
