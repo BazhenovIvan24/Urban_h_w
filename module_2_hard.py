@@ -18,6 +18,11 @@ for i in range(1, max_var_n):
 
 print(result)  # Вывод списком
 
+for i in range(len(result)):
+    result[i] = str(result[i])
+
+print(''.join(result))  #Вывод join строки из получившихся чисел
+
 for x in result:
 	print(x)  # Вывод поэлементно
 
