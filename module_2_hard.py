@@ -11,8 +11,18 @@ for i in range(1, max_var_n):
 
         delitel = n % (i + k)
         if delitel == 0:
-            result.append([i, k])
+            result.append(i)
+            result.append(k)
 
 
 
-print(result)
+print(result)  # Вывод списком
+
+for x in result:
+	print(x)  # Вывод поэлементно
+
+result = tuple(result)
+
+print(result)  # Вывод кортежем
+
+
