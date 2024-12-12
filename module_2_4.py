@@ -4,10 +4,13 @@ not_primes = []
 is_prime = True
 for n in numbers:
     for delitel in range(2, 15):
+               
         if n % delitel == 0 and n!= delitel:
             is_prime = False
             break
-
+    #Check n = 1 or not    
+    if n == 1:
+            continue    
     if is_prime == False:
         not_primes.append(n)
     else:
