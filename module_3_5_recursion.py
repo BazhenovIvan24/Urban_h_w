@@ -11,3 +11,4 @@ def get_multiplied_digits(number):
 
 product_of_number = get_multiplied_digits(402030)
 print(product_of_number)
+
