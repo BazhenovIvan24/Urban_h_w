@@ -5,7 +5,7 @@ def get_multiplied_digits(number):
 
 
 	if len(str_number) == 1:
-		return first  # Базовый случай: одна цифра
+		return first if first != 0 else 1 # Базовый случай: одна цифра
 	else:
 		return first * get_multiplied_digits(int(str_number[1:]))
 
