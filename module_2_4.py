@@ -3,9 +3,9 @@ primes =[]
 not_primes = []
 is_prime = True
 for n in numbers:
-    for delitel in range(2, 15):
+    for delitel in range(2, n):
                
-        if n % delitel == 0 and n!= delitel:
+        if n % delitel == 0:
             is_prime = False
             break
     #Check n = 1 or not    
