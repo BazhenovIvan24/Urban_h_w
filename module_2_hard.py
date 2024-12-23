@@ -1,11 +1,9 @@
 n = int(input('Введите число: '))
-max_var_n = n + 1
-result = []
-if n > 9:
-    max_var_n = 10
 
-for i in range(1, max_var_n):
-    for k in range(1, max_var_n):
+result = []
+
+for i in range(1, n):
+    for k in range(1, n):
         if k <= i:
             continue
 
