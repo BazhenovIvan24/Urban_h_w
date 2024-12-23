@@ -3,7 +3,7 @@ n = int(input('Введите число: '))
 result = []
 
 for i in range(1, n):
-    for k in range(1, n):
+    for k in range(i, n):
         if k <= i:
             continue
 
